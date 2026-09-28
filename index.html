@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savoria | Fine Dining</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 1. NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="logo nav-link">
+                <i class="fas fa-utensils"></i> SAVORIA
+            </a>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#menu" class="nav-link">Menu</a></li>
+                <li><a href="#why-us" class="nav-link">Why Us</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#reviews" class="nav-link">Reviews</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#reservation" class="btn btn-primary nav-link">Book a Table</a></li>
+            </ul>
+
+            <div class="hamburger" id="hamburger" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <!-- 2. HERO -->
+        <section id="hero" class="section">
+            <div class="hero">
+                <div class="hero-content">
+                    <h1 class="hero-title">Experience the Taste</h1>
+                    <p class="hero-subtitle">Fresh Food. Unforgettable Moments.</p>
+                    <div class="hero-buttons">
+                        <a href="#menu" class="btn btn-outline nav-link">Explore Menu</a>
+                        <a href="#reservation" class="btn btn-primary nav-link">Book a Table</a>
+                    </div>
+                    <div class="hero-rating">
+                        <i class="fas fa-star"></i> 4.8/5 Customer Rating
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. ABOUT SAVORIA -->
+        <section id="about" class="section">
+            <div class="container section-padding">
+                <div class="section-title text-center">
+                    <h2>About Savoria</h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="about-grid">
+                    <div class="about-img">
+                        <img src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?w=800" alt="Restaurant Interior">
+                    </div>
+                    <div class="about-content">
+                        <h2>A Taste of Luxury</h2>
+                        <h3 class="subtitle">Since 2015</h3>
+                        <p>Savoria was born out of a passion for authentic culinary experiences. We believe in serving food that not only tastes incredible but tells a story of tradition, culture, and innovation.</p>
+                        <p>Experience an atmosphere of warmth and sophistication, perfectly designed for romantic dinners, family gatherings, or business meetings.</p>
+                        <a href="#menu" class="btn btn-primary mt-20 nav-link">Discover Our Menu</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. FEATURED MENU -->
+        <section id="menu" class="section" style="background-color: #1a1a1a;">
+            <div class="container section-padding">
+                <div class="section-title text-center">
+                    <h2>Featured Menu</h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="menu-filters">
+                    <button class="menu-filter active" data-filter="all">All</button>
+                    <button class="menu-filter" data-filter="starters">Starters</button>
+                    <button class="menu-filter" data-filter="mains">Main Course</button>
+                    <button class="menu-filter" data-filter="desserts">Desserts</button>
+                </div>
+                
+                <div class="menu-grid">
+                    <!-- Menu Item -->
+                    <div class="menu-card" data-category="mains">
+                        <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9?w=600" alt="Pasta">
+                        <div class="menu-info">
+                            <div class="menu-header">
+                                <h3>Truffle Pasta</h3>
+                                <span class="price">₹450</span>
+                            </div>
+                            <p>Handmade pasta with creamy truffle sauce, parmesan, and fresh herbs.</p>
+                            <div class="menu-footer">
+                                <span class="rating"><i class="fas fa-star"></i> 4.9</span>
+                                <button class="btn btn-sm btn-outline">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Menu Item -->
+                    <div class="menu-card" data-category="mains">
+                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600" alt="Burger">
+                        <div class="menu-info">
+                            <div class="menu-header">
+                                <h3>Gourmet Burger</h3>
+                                <span class="price">₹350</span>
+                            </div>
+                            <p>Angus beef patty, aged cheddar, caramelized onions, and house sauce.</p>
+                            <div class="menu-footer">
+                                <span class="rating"><i class="fas fa-star"></i> 4.7</span>
+                                <button class="btn btn-sm btn-outline">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Menu Item -->
+                    <div class="menu-card" data-category="mains">
+                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600" alt="Pizza">
+                        <div class="menu-info">
+                            <div class="menu-header">
+                                <h3>Margherita Pizza</h3>
+                                <span class="price">₹399</span>
+                            </div>
+                            <p>Wood-fired crust, San Marzano tomato sauce, fresh mozzarella, and basil.</p>
+                            <div class="menu-footer">
+                                <span class="rating"><i class="fas fa-star"></i> 4.8</span>
+                                <button class="btn btn-sm btn-outline">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Menu Item -->
+                    <div class="menu-card" data-category="starters">
+                        <img src="https://images.unsplash.com/photo-1625937712144-a1fa5d7429b6?w=600" alt="Bruschetta">
+                        <div class="menu-info">
+                            <div class="menu-header">
+                                <h3>Tomato Bruschetta</h3>
+                                <span class="price">₹250</span>
+                            </div>
+                            <p>Grilled artisan bread rubbed with garlic and topped with tomatoes and basil.</p>
+                            <div class="menu-footer">
+                                <span class="rating"><i class="fas fa-star"></i> 4.6</span>
+                                <button class="btn btn-sm btn-outline">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Menu Item -->
+                    <div class="menu-card" data-category="desserts">
+                        <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=600" alt="Cheesecake">
+                        <div class="menu-info">
+                            <div class="menu-header">
+                                <h3>NY Cheesecake</h3>
+                                <span class="price">₹299</span>
+                            </div>
+                            <p>Classic creamy cheesecake with a graham cracker crust and berry compote.</p>
+                            <div class="menu-footer">
+                                <span class="rating"><i class="fas fa-star"></i> 4.9</span>
+                                <button class="btn btn-sm btn-outline">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Menu Item -->
+                    <div class="menu-card" data-category="desserts">
+                        <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=600" alt="Tiramisu">
+                        <div class="menu-info">
+                            <div class="menu-header">
+                                <h3>Authentic Tiramisu</h3>
+                                <span class="price">₹320</span>
+                            </div>
+                            <p>Espresso-soaked ladyfingers layered with mascarpone cream and cocoa.</p>
+                            <div class="menu-footer">
+                                <span class="rating"><i class="fas fa-star"></i> 4.8</span>
+                                <button class="btn btn-sm btn-outline">Order Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. WHY CHOOSE US -->
+        <section id="why-us" class="section">
+            <div class="container section-padding">
+                <div class="section-title text-center">
+                    <h2>Why Choose Us?</h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="icon-circle"><i class="fas fa-leaf"></i></div>
+                        <h3>Fresh Food</h3>
+                        <p>Locally sourced ingredients ensuring premium quality.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon-circle"><i class="fas fa-hat-chef"></i></div>
+                        <h3>Expert Chefs</h3>
+                        <p>Culinary masters crafting unforgettable flavors.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon-circle"><i class="fas fa-bolt"></i></div>
+                        <h3>Fast Service</h3>
+                        <p>Exceptional dining without the long wait.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon-circle"><i class="fas fa-heart"></i></div>
+                        <h3>Customer First</h3>
+                        <p>Your satisfaction is our absolute priority.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. CHEF / RESTAURANT STORY -->
+        <section id="story" class="section" style="background-color: #1a1a1a;">
+            <div class="container section-padding">
+                <div class="about-grid" style="grid-template-columns: 1fr 1fr; direction: rtl;">
+                    <div class="about-img" style="direction: ltr;">
+                        <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=800" alt="Head Chef">
+                    </div>
+                    <div class="about-content" style="direction: ltr;">
+                        <h2>Meet The Chef</h2>
+                        <h3 class="subtitle">Chef Alessandro</h3>
+                        <p>"Cooking is an art, but baking is a science. At Savoria, we blend both to bring you dishes that awaken the soul."</p>
+                        <p>Chef Alessandro brings 20 years of Michelin-star experience from Italy directly to your plate. His philosophy revolves around simple, high-quality ingredients transformed through masterful techniques.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. GALLERY -->
+        <section id="gallery" class="section">
+            <div class="container section-padding">
+                <div class="section-title text-center">
+                    <h2>Gallery</h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="gallery-grid">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600" alt="Fine dining table">
+                    <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?w=600" alt="Restaurant interior">
+                    <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600" alt="Chef plating">
+                    <img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?w=600" alt="Food platter">
+                    <img src="https://images.unsplash.com/photo-1544148103-0773bf10d330?w=600" alt="Grilling">
+                    <img src="https://images.unsplash.com/photo-1536991661646-c73db874558e?w=600" alt="Cocktails">
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. CUSTOMER REVIEWS -->
+        <section id="reviews" class="section" style="background-color: #1a1a1a;">
+            <div class="container section-padding">
+                <div class="section-title text-center">
+                    <h2>Customer Reviews</h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="reviews-grid">
+                    <div class="review-card">
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-text">"Amazing food and atmosphere. The Truffle Pasta is out of this world. Highly recommend!"</p>
+                        <h4 class="reviewer">— Rahul Sharma</h4>
+                    </div>
+                    <div class="review-card">
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <p class="review-text">"Excellent service and a beautiful interior. Perfect place for an anniversary dinner."</p>
+                        <h4 class="reviewer">— Priya Patel</h4>
+                    </div>
+                    <div class="review-card">
+                        <div class="stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="review-text">"The best Margherita pizza I've had outside of Italy. Will definitely be coming back."</p>
+                        <h4 class="reviewer">— Aman Singh</h4>
+                    </div>
+                </div>
+                
+                <div class="review-form-container mt-40">
+                    <h2 class="text-center mb-20" style="color: var(--primary);">Write a Review</h2>
+                    <form id="reviewForm" class="review-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Name</label>
+                                <input type="text" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Rating</label>
+                                <select required>
+                                    <option value="">Select a rating</option>
+                                    <option value="5">5 Stars - Excellent</option>
+                                    <option value="4">4 Stars - Very Good</option>
+                                    <option value="3">3 Stars - Average</option>
+                                    <option value="2">2 Stars - Poor</option>
+                                    <option value="1">1 Star - Terrible</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Your Review</label>
+                            <textarea rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-outline w-100">Submit Review</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- 9. RESERVATION CTA -->
+        <section id="reservation" class="section">
+            <div class="container section-padding">
+                <div class="reservation-wrapper">
+                    <div class="reservation-info">
+                        <h2>Book Your Table</h2>
+                        <p>Join us for an unforgettable dining experience. Please fill out the form below.</p>
+                        <div class="contact-mini">
+                            <p><i class="fas fa-phone"></i> +91 98765 43210</p>
+                            <p><i class="fas fa-envelope"></i> reservations@savoria.com</p>
+                        </div>
+                    </div>
+                    <form id="reservationForm" class="reservation-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Full Name</label>
+                                <input type="text" required placeholder="John Doe">
+                            </div>
+                            <div class="form-group">
+                                <label>Email Address</label>
+                                <input type="email" required placeholder="john@example.com">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Phone Number</label>
+                                <input type="tel" required placeholder="+91 XXXXX XXXXX">
+                            </div>
+                            <div class="form-group">
+                                <label>Number of Guests</label>
+                                <select required>
+                                    <option value="">Select guests</option>
+                                    <option>1 Person</option>
+                                    <option>2 People</option>
+                                    <option>3 People</option>
+                                    <option>4 People</option>
+                                    <option>5+ People</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Date</label>
+                                <input type="date" id="resDate" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Time</label>
+                                <input type="time" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Special Requests</label>
+                            <textarea rows="3" placeholder="Any dietary requirements or special occasions?"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Confirm Reservation</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- 10. CONTACT + MAP -->
+        <section id="contact" class="section" style="background-color: #1a1a1a;">
+            <div class="container section-padding">
+                <div class="section-title text-center">
+                    <h2>Contact Us</h2>
+                    <div class="divider"></div>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-details">
+                        <h2>Get In Touch</h2>
+                        <div class="contact-item mt-20">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div>
+                                <h4>Address</h4>
+                                <p>123 Culinary Avenue, Food District<br>Unnao, Uttar Pradesh 209801</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <div>
+                                <h4>Phone</h4>
+                                <p>+91 98765 43210</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>hello@savoria.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Opening Hours</h4>
+                                <p>Mon-Thu: 11:00 AM – 10:30 PM<br>Fri-Sat: 11:00 AM – 11:00 PM<br>Sun: 11:00 AM – 10:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                    <form id="contactForm" class="contact-form">
+                        <h2>Send a Message</h2>
+                        <div class="form-group mt-20">
+                            <label>Name</label>
+                            <input type="text" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Subject</label>
+                            <input type="text" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 11. FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col brand">
+                    <h2><i class="fas fa-utensils"></i> SAVORIA</h2>
+                    <p>Experience delicious food and unforgettable moments in an atmosphere of warmth and luxury.</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#hero" class="nav-link">Home</a></li>
+                        <li><a href="#about" class="nav-link">About Us</a></li>
+                        <li><a href="#menu" class="nav-link">Menu</a></li>
+                        <li><a href="#reservation" class="nav-link">Reservation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Savoria Restaurant. All Rights Reserved.</p>
+                <p>Privacy Policy | Terms of Service</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
